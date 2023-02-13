@@ -1,6 +1,7 @@
 import express from 'express'
 import axios from 'axios'
 import jsdom from 'jsdom'
+import cors from 'cors'
 import { CoinModel } from './models/CoinModel.js'
 
 const app = express()
@@ -74,7 +75,7 @@ async function getInfoCoinMarkerCap() {
     
 }
 
-// app.use(cors())
+app.use(cors())
 
 app.get('/', async (req, res) =>  {
     res.json('Welcome to the mini crypto API')
