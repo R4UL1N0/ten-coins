@@ -9,7 +9,7 @@ const { JSDOM } = jsdom
 
 const url = 'https://coinmarketcap.com/'
 
-const PORT = process.env.PORT || 3000
+const port = process.env.PORT || 3000
 
 async function getInfoCoinMarkerCap() {
 
@@ -91,6 +91,6 @@ app.get('/coins/:id', (req, res) => {
 
 })
 
-app.listen(PORT, () => {
+app.listen(port, () => {
     console.log('RUNNING')
 })
