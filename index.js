@@ -76,7 +76,7 @@ async function getInfoCoinMarkerCap() {
     
 }
 
-app.use(cors())
+// app.use(cors())
 
 app.get('/', async (req, res) =>  {
     res.json('Welcome to the mini crypto API')
